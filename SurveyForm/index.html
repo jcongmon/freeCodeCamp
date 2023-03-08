@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Survey Form</title>
+		<link rel='stylesheet' href='styles.css'>
+	</head>
+	<body>
+		<h1 id='title'>Survey Form</h1>
+		<p id='description'>Thank you for taking the time to fill out our survey</p>
+		<form id='survey-form'>
+			<fieldset>
+				<label id='name-label'>Name: <input type='text' id='name' placeholder='Enter your name'required></label>
+				<label id='email-label'>Email: <input type='email' id='email' placeholder='Enter your email' required></label>
+				<label id='number-label'>Age (years): <input type='number' id='number' min=13 max=120 placeholder=18>
+			</fieldset>
+			<fieldset>
+				<label for='dropdown-label' >
+					Which option best describes your current role?
+					<select id='dropdown'>
+						<option value='0' selected required>Select current role</option>
+						<option value='1'>Student</option>
+						<option value='2'>Full-time Job</option>
+						<option value='3'>Recruiter</option>
+						<option value='4'>Prefer not to say</option>
+						<option value='5'>Other</option>
+					</select>
+				</label>
+				<p>Would you recommend us to a friend?</p>
+				<label for='recommendation-yes'><input type='radio' name='recommendation' value='0' class='inline'> Yes</label>
+				<label for='recommendation-maybe'><input type='radio' name='recommendation' value='1' class='inline'> Maybe</label>
+				<label for='recommendation-no'><input type='radio' name='recommendation' value='2' class='inline'> No</label>
+			</fieldset>
+			<fieldset>
+				<label for='improvement-label'>
+					<p>How can we improve?</p>
+					<input type='checkbox' name='improvement' value='0' class='inline'> None
+					<input type='checkbox' name='improvement' value='1' class='inline'> Front-end
+					<input type='checkbox' name='improvement' value='2' class='inline'> Back-end
+					<input type='checkbox' name='improvement' value='3' class='inline'> Data structures & algorithms
+					<input type='checkbox' name='improvement' value='4' class='inline'> Open source projects
+					<input type='checkbox' name='improvement' value='5' class='inline'> Frameworks
+					<input type='checkbox' name='improvement' value='6' class='inline'> Databases
+					<input type='checkbox' name='improvement' value='7' class='inline'> Other
+				</label>
+			</fieldset>
+			<fieldset>
+				<label for='comments'>
+					Any comments or suggestions? <textarea id='comments' rows='3' cols='30' placeholder='Leave a comment'> </textarea>
+				</label>
+			</fieldset>
+			<input type='submit' value='Submit' id='submit'>
+		</form>
+	</body>
+</html>
